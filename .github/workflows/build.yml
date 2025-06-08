@@ -15,7 +15,7 @@ on:
       decrypted_ipa_url:
         description: "Direct URL of the decrypted X ipa"
         default: ""
-        required: true
+        required: false
         type: string
       deploy_format:
         description: "Deployment format"
