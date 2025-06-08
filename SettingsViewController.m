@@ -1,4 +1,4 @@
-//
+
 //  SettingsViewController.m
 //  NeoFreeBird
 //
@@ -386,7 +386,7 @@ PSSpecifier *photosVideosSection = [self newSectionWithTitle:[[BHTBundle sharedB
         PSSpecifier *debug = [self newSectionWithTitle:[[BHTBundle sharedBundle] localizedStringForKey:@"DEBUG_SECTION_HEADER_TITLE"] footer:nil];
         PSSpecifier *legalSection = [self newSectionWithTitle:[[BHTBundle sharedBundle] localizedStringForKey:@"LEGAL_SECTION_HEADER_TITLE"] footer:nil];
         PSSpecifier *developer = [self newSectionWithTitle:[[BHTBundle sharedBundle] localizedStringForKey:@"DEVELOPER_SECTION_HEADER_TITLE"] footer:nil];
-        PSSpecifier *updatesSection = [self newSectionWithTitle:@"关注我的推特账号!" footer:[NSString stringWithFormat:@"NeoFreeBird-BHTwitter v%@", [[BHTBundle sharedBundle] BHTwitterVersion]]];
+        PSSpecifier *updatesSection = [self newSectionWithTitle:@"!" footer:[NSString stringWithFormat:@"NeoFreeBird-BHTwitter v%@", [[BHTBundle sharedBundle] BHTwitterVersion]]];
         
         PSSpecifier *download = [self newSwitchCellWithTitle:[[BHTBundle sharedBundle] localizedStringForKey:@"DOWNLOAD_VIDEOS_OPTION_TITLE"] detailTitle:[[BHTBundle sharedBundle] localizedStringForKey:@"DOWNLOAD_VIDEOS_OPTION_DETAIL_TITLE"] key:@"dw_v" defaultValue:true changeAction:nil];
         
