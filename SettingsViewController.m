@@ -1,4 +1,4 @@
-
+//
 //  SettingsViewController.m
 //  NeoFreeBird
 //
@@ -386,7 +386,7 @@ PSSpecifier *photosVideosSection = [self newSectionWithTitle:[[BHTBundle sharedB
         PSSpecifier *debug = [self newSectionWithTitle:[[BHTBundle sharedBundle] localizedStringForKey:@"DEBUG_SECTION_HEADER_TITLE"] footer:nil];
         PSSpecifier *legalSection = [self newSectionWithTitle:[[BHTBundle sharedBundle] localizedStringForKey:@"LEGAL_SECTION_HEADER_TITLE"] footer:nil];
         PSSpecifier *developer = [self newSectionWithTitle:[[BHTBundle sharedBundle] localizedStringForKey:@"DEVELOPER_SECTION_HEADER_TITLE"] footer:nil];
-        PSSpecifier *updatesSection = [self newSectionWithTitle:@"查看我们的推特账户!" footer:[NSString stringWithFormat:@"NeoFreeBird-BHTwitter v%@", [[BHTBundle sharedBundle] BHTwitterVersion]]];
+        PSSpecifier *updatesSection = [self newSectionWithTitle:@"Check out our Twitter account!" footer:[NSString stringWithFormat:@"NeoFreeBird-BHTwitter v%@", [[BHTBundle sharedBundle] BHTwitterVersion]]];
         
         PSSpecifier *download = [self newSwitchCellWithTitle:[[BHTBundle sharedBundle] localizedStringForKey:@"DOWNLOAD_VIDEOS_OPTION_TITLE"] detailTitle:[[BHTBundle sharedBundle] localizedStringForKey:@"DOWNLOAD_VIDEOS_OPTION_DETAIL_TITLE"] key:@"dw_v" defaultValue:true changeAction:nil];
         
@@ -472,7 +472,7 @@ PSSpecifier *photosVideosSection = [self newSectionWithTitle:[[BHTBundle sharedB
         
         PSSpecifier *OldStyle = [self newSwitchCellWithTitle:[[BHTBundle sharedBundle] localizedStringForKey:@"ORIG_TWEET_STYLE_OPTION_TITLE"] detailTitle:[[BHTBundle sharedBundle] localizedStringForKey:@"ORIG_TWEET_STYLE_OPTION_DETAIL_TITLE"] key:@"old_style" defaultValue:false changeAction:nil];
         
-        PSSpecifier *stopHidingTabBar = [self newSwitchCellWithTitle:[[BHTBundle sharedBundle] localizedStringForKey:@"STOP_HIDING_TAB_BAR_TITLE"] detailTitle:@"滚动时始终显示底部标签栏" key:@"no_tab_bar_hiding" defaultValue:false changeAction:nil];
+        PSSpecifier *stopHidingTabBar = [self newSwitchCellWithTitle:[[BHTBundle sharedBundle] localizedStringForKey:@"STOP_HIDING_TAB_BAR_TITLE"] detailTitle:@"Keeps the tab bar visible and prevents fading" key:@"no_tab_bar_hiding" defaultValue:false changeAction:nil];
         
         PSSpecifier *dmAvatars = [self newSwitchCellWithTitle:[[BHTBundle sharedBundle] localizedStringForKey:@"DM_AVATARS_TITLE"] detailTitle:[[BHTBundle sharedBundle] localizedStringForKey:@"DM_AVATARS_DETAIL_TITLE"] key:@"dm_avatars" defaultValue:false changeAction:nil];
         
